@@ -1,3 +1,7 @@
+import * as styles from './AdminForm.css'
+import * as authRouterStyles from './AuthRouter.css'
+import { namedOperations } from '@/graph/generated/operations'
+import { DISMISS_JOIN_WORKSPACE_LOCAL_STORAGE_KEY } from '@/pages/Auth/JoinWorkspace'
 import { useAuthContext } from '@authentication/AuthContext'
 import { Button } from '@components/Button'
 import {
@@ -27,12 +31,6 @@ import { message } from 'antd'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useLocalStorage } from 'react-use'
-
-import { namedOperations } from '@/graph/generated/operations'
-import { DISMISS_JOIN_WORKSPACE_LOCAL_STORAGE_KEY } from '@/pages/Auth/JoinWorkspace'
-
-import * as styles from './AdminForm.css'
-import * as authRouterStyles from './AuthRouter.css'
 
 enum TeamSize {
 	One = '1',

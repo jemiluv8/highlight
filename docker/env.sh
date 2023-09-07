@@ -7,7 +7,7 @@ $(cat .env | grep -vE '^#' | sed -e 's/^/export /')
 export ENABLE_OBJECT_STORAGE=true
 export IN_DOCKER=true
 export OBJECT_STORAGE_FS=/tmp/highlight-data
-export REACT_APP_AUTH_MODE=simple
+export REACT_APP_AUTH_MODE=password
 
 if [[ "$*" == *"--go-docker"* ]]; then
     export IN_DOCKER_GO=true
