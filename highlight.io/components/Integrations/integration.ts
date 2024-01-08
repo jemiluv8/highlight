@@ -131,5 +131,11 @@ export const INTEGRATIONS: {
 			link: '/docs/general/integrations/jira-integration',
 			image: '/images/companies/icons/jira.png',
 		},
+		{
+			name: 'GitLab',
+			description: 'Create GitLab issues within highlight.io.',
+			link: '/docs/general/integrations/gitlab-integration',
+			image: '/images/companies/icons/gitlab.png',
+		},
 	],
 }
